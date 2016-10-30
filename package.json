@@ -1,5 +1,5 @@
 {
-  "name": "Politically-Tech",
+  "name": "political-prediction-tool",
   "version": "0.0.1",
   "description": "A simple tool demonstrating collaborative filtering",
   "main": "index.js",
