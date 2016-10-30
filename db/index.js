@@ -7,9 +7,7 @@ const pkg = require('APP')
 const seed = require('./seedData')
 
 const name = process.env.DATABASE_NAME || pkg.name
-const url = process.env.DATABASE_URL || 'postgres://oscmcixdxjaznb:1X0rasM-hk1LuuqU5E-FNPBNCe@ec2-54-235-240-76.compute-1.amazonaws.com:5432/dacnbkvkc0oqq1'
-
-// `postgres://localhost:5432/${pkg.name}` <-- dev testing
+const url = process.env.DATABASE_URL || `postgres://localhost:5432/${pkg.name}`
 
 console.log(chalk.yellow(`Opening database connection to ${url}`));
 

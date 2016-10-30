@@ -11,6 +11,9 @@
   },
   "author": "Mike Williams",
   "license": "ISC",
+  "engines": {
+    "node": "6.7.0"
+  },
   "dependencies": {
     "axios": "^0.15.2",
     "bluebird": "^3.4.6",
