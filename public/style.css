@@ -1,0 +1,16 @@
+th {
+  max-width: 200px;
+}
+
+.table {
+  padding-top: 15px;
+  max-width: 400px;
+}
+
+.padded {
+  padding: 15px;
+}
+
+.pad-bottom {
+  margin-bottom: 20px;
+}
