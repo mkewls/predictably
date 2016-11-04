@@ -7,8 +7,7 @@
     "test": "mocha **/*.test.js *.test.js",
     "build": "webpack",
     "build-watch": "webpack -w",
-    "start": "nodemon server/start.js",
-    "web": "node server/start.js"
+    "start": "webpack && bin/setup && nodemon server/start.js"
   },
   "author": "Mike Williams",
   "license": "ISC",
