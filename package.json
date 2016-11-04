@@ -1,5 +1,5 @@
 {
-  "name": "political-prediction-tool",
+  "name": "senior-enrichment",
   "version": "0.0.1",
   "description": "A simple tool demonstrating collaborative filtering",
   "main": "index.js",
@@ -7,7 +7,8 @@
     "test": "mocha **/*.test.js *.test.js",
     "build": "webpack",
     "build-watch": "webpack -w",
-    "start": "nodemon server/start.js"
+    "start": "nodemon server/start.js",
+    "web": "node server/start.js"
   },
   "author": "Mike Williams",
   "license": "ISC",
