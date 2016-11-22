@@ -3,7 +3,8 @@
 var Sequelize = require('sequelize')
 var db = require('APP/db')
 
-module.exports = db.define('votersBios', {
+// simple model, no validations, etc. given known fake data
+module.exports = db.define('votersBio', {
   name: Sequelize.STRING,
   age: Sequelize.STRING,
   address: Sequelize.STRING,

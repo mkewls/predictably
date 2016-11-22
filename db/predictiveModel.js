@@ -6,7 +6,6 @@ const seed = require('./seedData')
 
 // get some data
 const inputMatrixObj = seed.votersPrefsData;
-const rowLabelsObj = seed.votersBioData;
 
 // transform the data to the required spec =>
 // array of objects to array of arrays,
@@ -19,28 +18,7 @@ const inputMatrix = inputMatrixObj.map(obj => {
     return row;
 });
 
-// build that model
+// build the model with the formatted input matrix
 const Model = Recommender.buildModel(inputMatrix);
 
 module.exports = Model;
-
-/*
-If this library actually worked like it's supposed to, we could use
-row and column labels to access data...
-
-const rowLabels = rowLabelsObj.map(obj => {
-    return obj['name'];
-});
-
-const colLabels = [ 'jobs',
-                    'healthcare',
-                    'childcare',
-                    'lowerTaxes',
-                    'gunRights',
-                    'racialInjustice',
-                    'education',
-                    'lawEnforcement',
-                    'foreignPolicy',
-                    'terrorism'
-                  ];
-*/

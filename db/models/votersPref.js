@@ -3,7 +3,8 @@
 var Sequelize = require('sequelize')
 var db = require('APP/db')
 
-module.exports = db.define('votersPrefs', {
+// simple model, no validations, etc., given known fake data
+module.exports = db.define('votersPref', {
   jobs: Sequelize.FLOAT,
   healthcare: Sequelize.FLOAT,
   childcare: Sequelize.FLOAT,

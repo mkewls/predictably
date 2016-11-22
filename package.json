@@ -1,5 +1,5 @@
 {
-  "name": "senior-enrichment",
+  "name": "predictably-political",
   "version": "0.0.1",
   "description": "A simple tool demonstrating collaborative filtering",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "mocha **/*.test.js *.test.js",
     "build": "webpack",
     "build-watch": "webpack -w",
-    "start": "webpack && bin/setup && nodemon server/start.js"
+    "start": "webpack && nodemon server/start.js"
   },
   "author": "Mike Williams",
   "license": "ISC",

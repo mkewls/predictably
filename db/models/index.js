@@ -1,6 +1,6 @@
 'use strict'
 
-const VotersBios = require('./votersBios')
-const VotersPrefs = require('./votersPrefs')
+const VotersBio = require('./votersBio')
+const VotersPref = require('./votersPref')
 
-module.exports = { VotersBios, VotersPrefs }
+module.exports = { VotersBio, VotersPref }

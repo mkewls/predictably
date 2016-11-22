@@ -4,17 +4,17 @@ const Promise = require('bluebird')
 
 const db = require('APP/db')
 const models = require('../db/models')
-const VotersBios = models.VotersBios
-const VotersPrefs = models.VotersPrefs
+const VotersBio = models.VotersBio
+const VotersPref = models.VotersPref
 
 const Model = require('../db/predictiveModel');
 
 // api route to pull single voter files (both bio and preferences)
-// nb: the lack of a bulkCreate for seeding associated tables
-// means that there are two separate table pulls that assume a sorted db on id
+// recall that with fake data, there is no real association, hence
+// this method is allowable
 api.get('/voters/:id', (req, res, next) => {
-  let bios = VotersBios.findById(req.params.id)
-  let prefs = VotersPrefs.findById(req.params.id)
+  let bios = VotersBio.findById(req.params.id)
+  let prefs = VotersPref.findById(req.params.id)
 
   Promise.all([bios, prefs])
         .spread((biodata, prefdata) => {

@@ -1,30 +1,29 @@
-# Senior Enrichment Project
+# Predictably Politics!
 
-Make a thing!
+Welcome to a small little app that is meant to provide a quick example of how a simple \
+Bayesian machine learning model can be implemented in the area of voter analysis. Specifically \
+this app leverages a collaborative filtering method rooted in matrix factorization, as \
+helpfully abstracted by the Likely.js library for Node https://www.npmjs.com/package/likely. \
+So, while this isn't a perfect app, I hope that the fundamental application of machine \
+learning concepts to something as important as the election of the U.S. President is \
+made more clear.
 
 ## Getting started
 
 1. Fork and clone this repo
-2. *Set the name of your project in `package.json`*. The skeleton intentionally ships with an invalid name,
-and nothing will work.
-3. Start the build process:
+2. Open db/seedData.js and adjust the NUM_VOTERS constant to your desired number of voters!
 ```
 npm install
-npm run build-watch
-```
-
-4. In another terminal, start your app:
-
-```
 npm start
+
 ```
+4. Go Predict Voter Issue Sentiment!
 
-## Outline
+## Purpose
 
-Here’s a basic outline for the exercise:
-- Include two data models with an association between them (puppies and comments, stars and wishes, notes and child notes, assassins and marks… and comments belongs to puppies and/or puppies has many comments)
-- Make a backend that does the CRUD thing (i.e. has routes that handle POST, GET, PUT, and DELETE requests for both models)
-- Use React! Using Redux is optional. Ultimately, your front end should hook up to your backend somehow, allowing users to make those CRUD requests.
-- Authentication & Users is optional (you will tackle this in more depth for Grace Shopper).
+This is an obviously over-simplified version of how machine learning has made its way \
+into the predictive analytics used by political campaigns. For a brief and introductory \
+overview of this topic and to see this app in action, please watch my Fullstack Academy \
+tech talk here:  https://www.youtube.com/embed/SZY6_3nS4WM
 
-This exercise is designed to take around 6 hours.
+I'd love to hear your feedback. I'm best reached via mw [at] mikewill.net.
