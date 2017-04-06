@@ -15,9 +15,8 @@ made more clear.
 ```
 npm install
 npm start
-
 ```
-4. Go Predict Voter Issue Sentiment!
+3. Go Predict Voter Issue Sentiment!
 
 ## Purpose
 
